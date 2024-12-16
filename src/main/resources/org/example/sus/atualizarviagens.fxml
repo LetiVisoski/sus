@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sus.HelloController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <!-- Botão Voltar -->
+            <Button fx:id="voltarViagem" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#voltarViagem" text="Voltar" />
+
+            <!-- Título -->
+            <Label fx:id="viagemLabel" layoutX="229.0" layoutY="29.0" text="Atualizar Viagens">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <!-- Labels e Campos de Texto -->
+            <Label fx:id="idViagemLabel" layoutX="14.0" layoutY="95.0" text="Digite o ID da viagem que deseja atualizar :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="idmotoristaLabel" layoutX="14.0" layoutY="147.0" text="Id motorista :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="idveiculoLabel" layoutX="14.0" layoutY="183.0" text="Id veículo :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dataLabel" layoutX="16.0" layoutY="232.0" text="Data :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="horaLabel" layoutX="307.0" layoutY="232.0" text="Hora :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="embarqueLabel" layoutX="16.0" layoutY="281.0" text="Embarque :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="destinoLabel" layoutX="307.0" layoutY="281.0" text="Destino :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+
+            <!-- Botão Atualizar -->
+            <Button layoutX="193.0" layoutY="342.0" mnemonicParsing="false" onAction="#atualizarViagem" text="Atualizar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+
+            <!-- Campos de Texto -->
+            <TextField fx:id="idViagemTextField" layoutX="396.0" layoutY="96.0" />
+            <TextField fx:id="idmotoristaTextField" layoutX="141.0" layoutY="150.0" />
+            <TextField fx:id="idveiculoTextField" layoutX="141.0" layoutY="188.0" />
+            <TextField fx:id="diaTextField" layoutX="141.0" layoutY="233.0" />
+            <TextField fx:id="horaTextField" layoutX="388.0" layoutY="233.0" />
+            <TextField fx:id="embarqueTextField" layoutX="141.0" layoutY="282.0" />
+            <TextField fx:id="destinoTextField" layoutX="388.0" layoutY="282.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

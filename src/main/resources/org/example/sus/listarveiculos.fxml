@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sus.ListarVeiculosController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="tableView" layoutY="86.0" prefHeight="289.0" prefWidth="640.0">
+                    <columns>
+                        <TableColumn fx:id="tipoColumn" prefWidth="123.0" text="tipo" />
+                        <TableColumn fx:id="lugarColumn" prefWidth="70.0" text="Lugar" />
+                        <TableColumn fx:id="placaColumn" prefWidth="83.0" text="placa" />
+                    </columns>
+                </TableView>
+
+                <!-- Botão de Voltar -->
+                <Button layoutX="270.0" layoutY="350.0" mnemonicParsing="false" onAction="#voltarTela" text="Voltar">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

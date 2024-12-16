@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sus.HelloController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <!-- Botão Voltar -->
+            <Button fx:id="voltarButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#voltarViagem" text="Voltar" />
+
+            <!-- Título -->
+            <Label fx:id="viagensLabel" layoutX="211.0" layoutY="28.0" text="Cadastro de Viagens">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <!-- Labels e Campos de Texto -->
+            <Label fx:id="motoristaLabel" layoutX="26.0" layoutY="80.0" text="Id do motorista :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="motoristTextField" layoutX="187.0" layoutY="81.0" />
+
+            <Label fx:id="veiculoLabel" layoutX="26.0" layoutY="120.0" text="Id do veículo :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="veiculoTextField" layoutX="187.0" layoutY="122.0" />
+
+            <Label fx:id="diaLabel" layoutX="26.0" layoutY="170.0" text="Dia :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="diaTextField" layoutX="187.0" layoutY="171.0" />
+
+            <Label fx:id="embarqueLabel" layoutX="26.0" layoutY="217.0" text="Local de embarque:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="embarqueTextField" layoutX="187.0" layoutY="218.0" />
+
+            <Label fx:id="destinoLabel" layoutX="23.0" layoutY="268.0" text="Local de destino :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="destinoTextField" layoutX="187.0" layoutY="264.0" />
+
+            <Label fx:id="horaLabel" layoutX="389.0" layoutY="170.0" text="Hora :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="horaTextField" layoutX="454.0" layoutY="171.0" />
+
+            <!-- Botões -->
+            <Button layoutX="413.0" layoutY="276.0" mnemonicParsing="false" onAction="#adicionarPessoaV" text="Adicionar pessoas">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="413.0" layoutY="333.0" mnemonicParsing="false" onAction="#criarViagem" text="Criar Viagem">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
