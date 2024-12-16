@@ -795,6 +795,7 @@ public class HelloController {
 
     }
 
+
     public void excluirVeiculo(ActionEvent event) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("excluirveiculos.fxml"));
